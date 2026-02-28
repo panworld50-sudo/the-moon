@@ -1,32 +1,24 @@
 {
-  "name": "the-moon",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+  // Database configuration
+  "database": {
+    "host": "localhost",
+    "port": 5432,
+    "name": "myapp", // production uses 'myapp_prod'
   },
-  "dependencies": {
-    "next": "15.0.0",
-    "react": "^18",
-    "react-dom": "^18",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5",
-    "lucide-react": "^0.314.0",  // shadcn ke liye
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
-    "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7",
-    "@radix-ui/react-accordion": "^1.1.2",
-    // Add baaki shadcn se
-    "@google/translate-api": "^1.1.1"  // Optional, script use karenge
+  
+  /*
+   * Feature flags
+   * Enable experimental features with caution
+   */
+  "features": {
+    "darkMode": true,
+    "betaFeatures": false,
+    "maxUploadSize": 10485760, // 10MB in bytes
   },
-  "devDependencies": {
-    "eslint": "^8",
-    "eslint-config-next": "15.0.0"
+  
+  // Logging settings
+  "logging": {
+    "level": "info",
+    "format": "json",
   }
 }
