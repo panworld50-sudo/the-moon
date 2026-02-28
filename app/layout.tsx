@@ -3,6 +3,11 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
 import TranslateWidget from "@/components/TranslateWidget";
+<ThemeToggle />   {/* Naya */}
+  <div className="flex min-h-screen">
+    ...
+  </div>
+</ThemeProvider>
 import { ThemeProvider } from "@/components/providers/ThemeProvider";  // Naya import
 
 const inter = Inter({ subsets: ["latin"] });
