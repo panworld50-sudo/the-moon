@@ -44,5 +44,8 @@ export default function Sidebar() {
         {/* Add more like Tech, Health, etc. as needed */}
       </Accordion>
     </div>
+    <div className="fixed left-0 top-0 h-screen w-64 bg-white dark:bg-black border-r border-gray-200 dark:border-gray-800 p-4 overflow-y-auto text-black dark:text-white">
+  ...
+</div>
   );
 }
