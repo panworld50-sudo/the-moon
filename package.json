@@ -1,1 +1,12 @@
-{"database":{"host":"localhost","port":5432,"name":"myapp"},"features":{"darkMode":true,"betaFeatures":false,"maxUploadSize":10485760},"logging":{"level":"info","format":"json"}}
+{
+  "name": "the-moon",
+  "version": "1.0.0",
+  "description": "Your project description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
